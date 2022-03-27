@@ -11,9 +11,51 @@
         {{/if}}
 
         {{#unless @member}}
-            <div class="cover-cta">
-                <button class="button members-subscribe" data-portal="signup">Subscribe now</button>
-                <button class="button button-secondary members-login" data-portal="signin">Login</button>
+            <style>
+                .subscribe-form-container {
+                    margin-top: 2rem;
+                }
+                .subscribe-form {
+                    display: flex;
+                    flex-direction: row;
+                }
+                /* Firefox Relay wraps our input in a div, breaking flexbox */
+                .fx-relay-email-input-wrapper {
+                    flex: 1;
+                }
+                .subscribe-form input {
+                    flex: 1;
+                    border-top-right-radius: initial;
+                    border-bottom-right-radius: initial;
+                    border-right: 0;
+                }
+                .subscribe-form button {
+                    color: #fff;
+                    border-left: 0;
+                    background-color: var(--brand-color);
+                    border-top-left-radius: initial;
+                    border-bottom-left-radius: initial;
+                    height: initial;
+                    margin-left: 0;
+                }
+                .subscribe-form.success, .subscribe-form.loading, .success-msg, .loading-msg {
+                    display: none;
+                }
+                .subscribe-form.success ~ .error-msg,
+                .subscribe-form.success ~ .success-msg,
+                .subscribe-form.loading ~ .loading-msg {
+                    display: block;
+                    font-weight: bold;
+                }
+            </style>
+            <div class="subscribe-form-container">
+                <form data-members-form="subscribe" class="subscribe-form">
+                    <input data-members-email type="email" placeholder="Type your email…" required="true"/>
+                    <button class="button" type="submit">Subscribe</button>
+                </form>
+                <div class="error-msg">Failed to subscribe</div>
+                <div class="loading-msg">Submitting form</div>
+                <div class="success-msg">Thanks for subscribing!</div>
             </div>
         {{/unless}}
     </div>

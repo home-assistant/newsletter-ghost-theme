@@ -42,9 +42,10 @@
                     {{navigation}}
                     {{#if @member}}
                         <button class="button-text menu-item members-account" data-portal="account">Account</button>
-                    {{else}}
-                        <button class="button-text menu-item menu-item-cta members-subscribe" data-portal="signup">Subscribe</button>
                     {{/if}}
+                    {{#is "post"}}
+                        <button class="button-text menu-item menu-item-cta members-subscribe" data-portal="signup">Subscribe</button>
+                    {{/is}}
                 </nav>
             </div>
         </div>
