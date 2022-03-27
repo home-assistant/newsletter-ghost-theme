@@ -1,14 +1,14 @@
 {
-    "name": "dawn",
-    "description": "A Ghost theme",
-    "version": "1.0.0",
+    "name": "ha-dawn",
+    "description": "A Ghost theme (edit by HA)",
+    "version": "1.0.8",
     "engines": {
         "ghost": ">=4.0.0",
         "ghost-api": "v4"
     },
     "license": "MIT",
     "author": {
-        "name": "Ghost Foundation",
+        "name": "Ghost Foundation/Home Assistant",
         "email": "hello@ghost.org",
         "url": "https://ghost.org"
     },
@@ -43,12 +43,18 @@
         "custom": {
             "title_font": {
                 "type": "select",
-                "options": ["Modern sans-serif", "Elegant serif"],
+                "options": [
+                    "Modern sans-serif",
+                    "Elegant serif"
+                ],
                 "default": "Modern sans-serif"
             },
             "body_font": {
                 "type": "select",
-                "options": ["Modern sans-serif", "Elegant serif"],
+                "options": [
+                    "Modern sans-serif",
+                    "Elegant serif"
+                ],
                 "default": "Modern sans-serif"
             },
             "color_scheme": {
@@ -64,6 +70,9 @@
                 "type": "image"
             },
             "content_api_key_for_search": {
+                "type": "text"
+            },
+            "site_subtitle": {
                 "type": "text"
             },
             "show_featured_posts": {

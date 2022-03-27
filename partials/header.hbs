@@ -7,8 +7,9 @@
                 {{/if}}
                 <img class="logo-image" src="{{@site.logo}}" alt="{{@site.title}}">
             {{else}}
-                <span class="logo-text">{{@site.title}}</span>
+                <span class="logo-text">{{@site.title}}</span></a>
             {{/if}}
+               <span class="logo-subtext">{{@custom.site_subtitle}}</span>
         </a>
     </div>
     {{#if @site.navigation}}
@@ -41,11 +42,7 @@
                     {{navigation}}
                     {{#if @member}}
                         <button class="button-text menu-item members-account" data-portal="account">Account</button>
-                        {{#unless @member.paid}}
-                            <button class="button-text menu-item menu-item-cta members-upgrade" data-portal="account/plans">Upgrade</button>
-                        {{/unless}}
                     {{else}}
-                        <button class="button-text menu-item members-login" data-portal="signin">Login</button>
                         <button class="button-text menu-item menu-item-cta members-subscribe" data-portal="signup">Subscribe</button>
                     {{/if}}
                 </nav>
@@ -53,15 +50,7 @@
         </div>
     {{/if}}
     <div class="header-right hidden-xs hidden-sm hidden-md">
-        {{#if @member}}
-            <button class="button-text menu-item members-account" data-portal="account">Account</button>
-            {{#unless @member.paid}}
-                <button class="button-text menu-item menu-item-cta members-upgrade" data-portal="account/plans">Upgrade</button>
-            {{/unless}}
-        {{else}}
-            <button class="button-text menu-item members-login" data-portal="signin">Login</button>
-            <button class="button-text menu-item menu-item-cta members-subscribe" data-portal="signup">Subscribe</button>
-        {{/if}}
+        <button class="button-text menu-item menu-item-cta members-subscribe" data-portal="signup">Subscribe</button>
     </div>
 </header>
 
