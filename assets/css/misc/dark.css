@@ -1,7 +1,7 @@
 .theme-dark:root {
-    --primary-text-color: #e2e2e2;
+    --primary-text-color: #fff;
     --secondary-text-color: #868686;
-    --white-color: #282c35;
+    --white-color: #121212;
     --lighter-gray-color: #2f333c;
     --light-gray-color: #3b3e46;
     --mid-gray-color: #666;
@@ -46,9 +46,9 @@
 
 @media (prefers-color-scheme: dark) {
     html:not(.theme-light):root {
-        --primary-text-color: #e2e2e2;
-        --secondary-text-color: #868686;
-        --white-color: #282c35;
+        --primary-text-color: #fff;
+        --secondary-text-color: #9b9b9b;
+        --white-color: #121212;
         --lighter-gray-color: #2f333c;
         --light-gray-color: #3b3e46;
         --mid-gray-color: #666;

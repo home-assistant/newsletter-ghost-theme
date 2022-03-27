@@ -8,11 +8,16 @@
 .header-right {
     flex: 2;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header-left {
+    align-items: flex-start;
 }
 
 .header-right {
-    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .header-right .menu-item {
@@ -28,9 +33,15 @@
 }
 
 .logo-text {
-    color: var(--secondary-text-color);
+    /* color: var(--secondary-text-color); */
     font-size: 1.8rem;
     font-weight: 800;
+}
+
+.logo-subtext {
+    color: var(--secondary-text-color);
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 .logo-image {
@@ -54,7 +65,7 @@
     font-weight: 700;
 }
 
-.site-header .menu-item:nth-child(n+6) {
+.site-header .menu-item:nth-child(n + 6) {
     display: none;
 }
 
