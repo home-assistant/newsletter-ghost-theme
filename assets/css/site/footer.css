@@ -21,6 +21,17 @@
     height: 24px;
 }
 
+.footer-text {
+    color: var(--secondary-text-color);
+    font-size: 1.2rem;
+    letter-spacing: -0.02rem;
+    margin-top: 0.5rem;
+}
+
+.footer-text a {
+    color: var(--brand-color);
+}
+
 .copyright {
     color: var(--secondary-text-color);
     font-size: 1.2rem;
