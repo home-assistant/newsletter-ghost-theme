@@ -14,5 +14,5 @@ jobs:
       - uses: actions/upload-artifact@v2
         name: "Upload build"
         with:
-          name: theme
-          path: dist/*.zip
+          name: ha-dawn.zip
+          path: dist/ha-dawn.zip
