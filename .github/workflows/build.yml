@@ -11,8 +11,9 @@ jobs:
       - uses: actions/checkout@v3
       - run: yarn
       - run: yarn zip
+      - run: cd dist && unzip ha-dawn.zip && rm ha-dawn.zip
       - uses: actions/upload-artifact@v2
         name: "Upload build"
         with:
           name: ha-dawn
-          path: dist/ha-dawn.zip
+          path: dist/*
