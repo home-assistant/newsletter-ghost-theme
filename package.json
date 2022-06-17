@@ -2,9 +2,6 @@
     "name": "ha-dawn",
     "description": "A Ghost theme (edit by HA)",
     "version": "1.0.8",
-    "engines": {
-        "ghost": ">=4.0.0"
-    },
     "license": "MIT",
     "author": {
         "name": "Ghost Foundation/Home Assistant",
