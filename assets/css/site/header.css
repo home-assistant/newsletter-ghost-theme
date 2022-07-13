@@ -151,3 +151,26 @@
 .menu-opened .mobile-menu {
     display: block;
 }
+
+.gh-search {
+    margin-right: -2px;
+}
+
+.gh-icon-btn {
+    align-items: center;
+    background-color: transparent;
+    border: 0;
+    color: var(--darker-gray-color);
+    cursor: pointer;
+    display: inline-flex;
+    height: 30px;
+    justify-content: center;
+    outline: none;
+    padding: 0;
+    width: 30px;
+}
+
+.gh-icon-btn svg {
+    height: 20px;
+    width: 20px;
+}

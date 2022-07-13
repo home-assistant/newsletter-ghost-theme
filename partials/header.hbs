@@ -15,6 +15,7 @@
     {{#if @site.navigation}}
         <nav class="main-nav hidden-xs hidden-sm hidden-md">
             {{navigation}}
+            <button class="gh-search gh-icon-btn" data-ghost-search>{{> "icons/search"}}</button>
             {{#if @custom.content_api_key_for_search}}
                 <button class="button-icon menu-item-button js-modal" data-modal="search" aria-label="Search">
                     <svg class="icon">
